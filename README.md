@@ -97,7 +97,11 @@ stellar-pocketpay-sdk/
 
 ## Configuration
 
-The SDK defaults to **Stellar Testnet**. Configure via environment variables or programmatic overrides:
+The SDK defaults to **Stellar Testnet**. Configure via environment variables or programmatic overrides.
+
+For a full environment-variable reference table, see: [`docs/configuration.md`](docs/configuration.md).
+
+### Environment variables (quick setup)
 
 ```bash
 # .env
@@ -106,6 +110,8 @@ STELLAR_HORIZON_URL=https://horizon-testnet.stellar.org
 STELLAR_SOROBAN_RPC_URL=https://soroban-testnet.stellar.org
 VAULT_CONTRACT_ID=CXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
+
+### Programmatic overrides
 
 Or pass config directly:
 

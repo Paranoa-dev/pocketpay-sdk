@@ -60,6 +60,8 @@ export { depositToVault, withdrawFromVault, getVaultBalance } from './soroban';
 export {
   resolveConfig,
   getHorizonServer,
+  setHorizonServerFactory,
+  resetHorizonServerFactory,
   getNetworkPassphrase,
   getFriendbotUrl,
   validateNetwork,

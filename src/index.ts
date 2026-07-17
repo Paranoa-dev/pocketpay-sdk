@@ -57,6 +57,11 @@ export {
   getHorizonServer,
   getNetworkPassphrase,
   getFriendbotUrl,
+  validateNetwork,
+  validateHorizonUrl,
+  validateSorobanRpcUrl,
+  validateTimeout,
+  validateContractId,
 } from './config';
 
 // ─── Utils ──────────────────────────────────────────────────────────────────

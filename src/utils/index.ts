@@ -11,7 +11,11 @@ import {
   SuccessResult,
   FailureResult,
   PocketPayResult,
+  EnhancedSuccessResult,
+  EnhancedFailureResult,
+  EnhancedPocketPayResult,
 } from '../types';
+import type { ResultWarning, RecoveryHint } from '../errors';
 
 // ─── Validation ─────────────────────────────────────────────────────────────
 
@@ -374,5 +378,9 @@ export async function toResult<T>(
     return toFailureResult(pocketErr);
   }
 }
-
+export {
+  getAccountExplorerLink,
+  getTransactionExplorerLink,
+  getOperationExplorerLink,
+} from './explorer';
 
